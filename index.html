@@ -2,50 +2,70 @@
 <html lang=“en”>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> -->
+    <!-- try without putting the 'type' -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> 
 
+    <!-- what does webkit do?? -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #77c3ec;
-}
+        /** for header/navigation bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #77c3ec;
+        }
 
-li {
-    float: left;
-}
-        
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-        
-li a:hover {
-    background-color: #89cff0;
-} 
+        li {
+            float: left;
+        }
+                
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+                
+        li a:hover {
+            background-color: #89cff0;
+        } 
+
+        /** for main content in the center*/
+        body {
+            background-image: url("dhaka_city_bg.jpg");
+            background-position: left top;
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
 
     </style> 
     
 </head>
 
 <body>
-    <!-- header -->
+    <!-- header/navigation bar -->
     <nav>
-    <ul>
-        <li> <a href="#home"> Home</a> </li>
-        <li> <a href="#resume"> Resume</a> </li>
-        <li> <a href="#contact"> Home</a> </li>
-    </ul>
+        <ul>
+            <li> <a href="#home"> Home</a> </li>
+            <li> <a href="#resume"> Resume</a> </li>
+            <li> <a href="#contact"> Contact</a> </li>
+        </ul>
     </nav>    
 
-    <h1> Tabassum Alam </h1>
+    <!-- main text of the landing page -->
+    <div id="main-center">
+        <h1> Tabassum Alam </h1>
+    </div>    
+
+    <footer>
+        <h6> the end </h6>
+    </footer>
+
 
 </body>
 
